@@ -3,7 +3,7 @@
 The main landing page of my website.
 Also contains some "static-ish" pages that didn't really need their own server.
 
-##Currently contains these pages:
+## Currently contains these pages:
 
 - **colorfulprojects.cloud**: the main landing page of my website. Contains links to other projects that are currently hosted.
 - **About Me**: a page that lists the various programming languages, frameworks and software that I use.
