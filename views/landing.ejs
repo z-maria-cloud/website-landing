@@ -6,70 +6,75 @@
     <title>░▒▓█ Colorfulprojects.cloud █▓▒░</title>
     <link rel="icon" href="landingIcon.png" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="landingStyles.css" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="landingStyles.css" />
-
-<style>
-
-</style>
-
+    <style></style>
   </head>
   <body>
-	  
-	  <div class="decoration">
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  <p class="decoration-element">▞</p>
-		  
-	  </div>
-	  
-<h1 class="center pixel-font title"><span class="pixel-font title-decoration">░▒▓█ </span>
-<span class="color1 pixel-font negative">C</span>
-<span class="color2 pixel-font negative">o</span>
-<span class="color1 pixel-font negative">l</span>
-<span class="color2 pixel-font negative">o</span>
-<span class="color1 pixel-font negative">r</span>
-<span class="color2 pixel-font negative">f</span>
-<span class="color1 pixel-font negative">u</span>
-<span class="color2 pixel-font negative">l</span>
-projects.cloud<span class="pixel-font title-decoration"> █▓▒░</span></h1>
-<h2 class="center pixel-font" style="color: #0078e1;">Welcome to my website! These are the projects that are currently being hosted:</h2>
-<div class="center-box">
+    <div class="decoration">
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+      <p class="decoration-element">▞</p>
+    </div>
 
-<% let keys = Object.keys(data)%>
-    <% for(let i = 0; i < keys.length; i++) { %>
+    <h1 class="center pixel-font title">
+      <span class="pixel-font title-decoration">░▒▓█ </span>
+      <span class="color1 pixel-font negative">C</span>
+      <span class="color2 pixel-font negative">o</span>
+      <span class="color1 pixel-font negative">l</span>
+      <span class="color2 pixel-font negative">o</span>
+      <span class="color1 pixel-font negative">r</span>
+      <span class="color2 pixel-font negative">f</span>
+      <span class="color1 pixel-font negative">u</span>
+      <span class="color2 pixel-font negative">l</span>
+      projects.cloud<span class="pixel-font title-decoration"> █▓▒░</span>
+    </h1>
+    <h2 class="center pixel-font" style="color: #0078e1">
+      Welcome to my website! These are the projects that are currently being
+      hosted:
+    </h2>
+    <div class="center-box">
+      <% let keys = Object.keys(data)%> <% for(let i = 0; i < keys.length; i++)
+      { %>
 
-<div class="hosted-project shadow">
-<a href="<%= data[keys[i]].address %>"><img src="<%= keys[i] %>.jpg"></a>
-<div class="hosted-project-data">
-<a href="<%= data[keys[i]].address %>"><h3 class="hosted-project-title"><%= data[keys[i]].title %></h3></a>
-<p class="hosted-project-text"><%= data[keys[i]].description %></p>
-<a href="<%= data[keys[i]].github %>">View this project on Github</a>
-</div>
-
-</div>
-<% } %>
-</div>
-
-
+      <div class="hosted-project shadow">
+        <a href="<%= data[keys[i]].address %>"
+          ><img src="<%= keys[i] %>.jpg"
+        /></a>
+        <div class="hosted-project-data">
+          <a href="<%= data[keys[i]].address %>"
+            ><h3 class="hosted-project-title"><%= data[keys[i]].title %></h3></a
+          >
+          <p class="hosted-project-text"><%= data[keys[i]].description %></p>
+          <a href="<%= data[keys[i]].github %>">View this project on Github</a>
+        </div>
+      </div>
+      <% } %>
+    </div>
   </body>
 </html>

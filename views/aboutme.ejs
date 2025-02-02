@@ -6,7 +6,6 @@
     <title>Leila, junior web developer</title>
     <link rel="icon" href="aboutmeIcon.png" />
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -95,14 +94,14 @@
     </div>
     <!-- main content -->
 
-    <% let keys = Object.keys(data.skillsets)%>
-    <% for(let i = 0; i < keys.length; i++) { %>
+    <% let keys = Object.keys(data.skillsets)%> <% for(let i = 0; i <
+    keys.length; i++) { %>
 
     <h2 class="title white"><span class="gold">❁</span> <%= keys[i] %></h2>
     <div class="main-content">
       <div class="skills-grid basic-grid">
-        <% let topics = Object.keys(data.skillsets[keys[i]]) %>
-        <% for(let y = 0; y < topics.length; y++) { %>
+        <% let topics = Object.keys(data.skillsets[keys[i]]) %> <% for(let y =
+        0; y < topics.length; y++) { %>
 
         <div class="skills-element shadow">
           <div class="progress-container">
@@ -119,10 +118,10 @@
           <!-- progress-container -->
           <% if (data.skillsets[keys[i]][topics[y]].fact) { %>
           <p class="fact"><%= data.skillsets[keys[i]][topics[y]].fact %></p>
-          <% } %>
-          <% if (data.skillsets[keys[i]][topics[y]].list) { %>
+          <% } %> <% if (data.skillsets[keys[i]][topics[y]].list) { %>
           <ul>
-            <% for(let x = 0; x < data.skillsets[keys[i]][topics[y]].list.length; x++) { %>
+            <% for(let x = 0; x <
+            data.skillsets[keys[i]][topics[y]].list.length; x++) { %>
             <li><%= data.skillsets[keys[i]][topics[y]].list[x]%></li>
             <% } %>
           </ul>
@@ -141,7 +140,8 @@
     <h2 class="title white"><span class="gold">❁</span>Github</h2>
     <div class="main-content">
       <div class="image-grid basic-grid github-grid">
-        <% keys = Object.keys(data.projects)%> <% for(let i = 0; i < keys.length; i++) { %>
+        <% keys = Object.keys(data.projects)%> <% for(let i = 0; i <
+        keys.length; i++) { %>
 
         <div class="image-grid-element shadow">
           <img src="<%= keys[i] %>.jpg" />
