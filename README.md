@@ -8,6 +8,15 @@ Also contains some "static-ish" pages that didn't really need their own server.
 - **colorfulprojects.cloud**: the main landing page of my website. Contains links to other projects that are currently hosted.
 - **About Me**: a page that lists the various programming languages, frameworks and software that I use.
 
+To use:
+- Clone this repository
+- Run "npm install" to install the dependencies
+- **Important**: by default runs on port 3000, you can customize the port number in package.json
+
+Usage:
+- `npm run dev`: runs the server on port 3000
+- `npm run production`: runs the server on port 3000 while passing NODE_ENV=production
+
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
