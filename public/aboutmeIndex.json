@@ -1,0 +1,157 @@
+{
+  "skillsets": {
+    "Languages I speak": {
+      "italian": {
+        "name": "Italian",
+        "percentage": 100,
+        "fact": "Fun Fact: italian is my first language."
+      },
+      "english": {
+        "name": "English",
+        "percentage": 95,
+        "fact": "Fun Fact: I use english in my day-to-day life more than I use italian.",
+        "list": ["I own a B2-C1 Cambridge certification."]
+      },
+      "french": {
+        "name": "French",
+        "percentage": 90,
+        "fact": "Fun Fact: I grew up in a francophone country."
+      }
+    },
+    "Programming languages and frameworks I use": {
+      "html": {
+        "name": "HTML",
+        "percentage": 90
+      },
+      "css": {
+        "name": "CSS",
+        "percentage": 90,
+        "fact": "Fun fact: I wrote all of the CSS for this page myself!"
+      },
+      "javascript": {
+        "name": "Javascript",
+        "percentage": 65,
+        "fact": "How I used Javascript so far:",
+        "list": [
+          "Frontend interactivity",
+          "Server programming on ExpressJs",
+          "Programming simple CLI tools"
+        ]
+      },
+      "react": {
+        "name": "React",
+        "percentage": 20,
+        "fact": "While I know the basics of React I'm still learning, and I haven't used it in any projects yet."
+      },
+      "python": {
+        "name": "Python",
+        "percentage": 55,
+        "fact": "Fun Fact: Python is the first programming language I learned.",
+        "list": ["Small text-adventure games programming", "CLI tools"]
+      },
+      "expressjs": {
+        "name": "Express",
+        "percentage": 70,
+        "fact": "Fun Fact: this website is built on Express!",
+        "list": ["Express is my go-to web framework for small projects"]
+      },
+      "ejs": {
+        "name": "EJS",
+        "percentage": 90,
+        "fact": "I still heavily rely on EJS for small projects."
+      },
+      "wordpress": {
+        "name": "Wordpress",
+        "percentage": 20,
+        "list": ["Classic theme development basics"]
+      },
+      "docker": {
+        "name": "Docker",
+        "percentage": 60,
+        "fact": "Fun Fact: I learned how to use Docker in order to create an isolated Wordpress development environment.",
+        "list": [
+          "Docker Compose & Desktop",
+          "Creating and customising images and volumes",
+          "Mounting folders as volumes",
+          "Watch + Develop"
+        ]
+      },
+      "mysql": {
+        "name": "MySQL",
+        "percentage": 30,
+        "list": [
+          "Creating databases, users and tables",
+          "Connecting to a database from a NodeJs App",
+          "Securely storing hashed passwords"
+        ]
+      }
+    },
+    "Software I use": {
+      "blender": {
+        "name": "Blender",
+        "percentage": 50,
+        "list": ["Advanced knowledge of node shaders and lighting"]
+      },
+      "gimp": {
+        "name": "GIMP",
+        "percentage": 90,
+        "fact": "Fun fact: I haven't used Adobe Photoshop in years."
+      },
+      "photoshop": {
+        "name": "Adobe Photoshop",
+        "percentage": 35
+      },
+      "clipstudio": {
+        "name": "Clip Studio Paint",
+        "percentage": 65
+      },
+      "resolve": {
+        "name": "Davinci Resolve",
+        "percentage": 30,
+        "fact": "I never used the paid version."
+      },
+      "kdenlive": {
+        "name": "Kdenlive",
+        "percentage": 70,
+        "fact": "Fun fact: Kdenlive is one of the best open source video editing programs."
+      },
+      "office 362": {
+        "name": "Microsoft Office Suite",
+        "percentage": 90,
+        "fact": "I have 2 Eipass certifications."
+      },
+      "linux": {
+        "name": "Linux",
+        "percentage": 90,
+        "fact": "Fun fact: I've been using Linux as my primary OS for the last 7 years."
+      }
+    }
+  },
+  "projects": {
+    "mdstudynotes": {
+      "name": "MD Study Notes",
+      "description": "An online repository of my study notes.",
+      "github": "https://github.com/z-maria-cloud/md-study-notes/"
+    },
+    "personal": {
+      "name": "Website Hub",
+      "description": "The website you're currently visiting.",
+      "github": "https://github.com/z-maria-cloud/website-landing/"
+    },
+    "useragent": {
+      "name": "What Is My User Agent?",
+      "description": "Displays the User Agent of the client that performed the request.",
+      "github": "https://github.com/z-maria-cloud/what-is-my-user-agent/"
+    },
+    "gachabits": {
+      "name": "Gachabits",
+      "description": "Coming soon!",
+      "github": "https://github.com/z-maria-cloud"
+    },
+    "bookmarks": {
+      "name": "Bookmarks Dashboard",
+      "description": "Coming soon!",
+      "github": "https://github.com/z-maria-cloud"
+    }
+  }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leila, junior web developer</title>
+    <link rel="icon" href="aboutmeIcon.png" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="aboutmeStyles.css" />
+  </head>
+  <body>
+    <div class="doodles-container">
+      <p class="doodle red">❀</p>
+      <p class="doodle white">❁</p>
+      <p class="doodle violet">✧</p>
+      <p class="doodle blue">✾</p>
+      <p class="doodle gold">✼</p>
+      <p class="doodle red">❀</p>
+      <p class="doodle white">❁</p>
+      <p class="doodle violet">✧</p>
+      <p class="doodle blue">✾</p>
+      <p class="doodle gold">✼</p>
+    </div>
+    <div class="banner basic-grid banner-grid">
+      <div class="banner-element">
+        <h1>Hi! I'm <span class="red animate">Leila</span>.</h1>
+        <h2 class="banner-text">
+          I'm a <span class="blue">junior fullstack web developer</span>, artist
+          and full-time student.
+        </h2>
+      </div>
+      <!-- banner-element-->
+
+      <img class="profile" src="portraitbw.png" />
+    </div>
+    <!-- banner -->
+
+    <h2 class="title white"><span class="gold">❁</span> What I do</h2>
+    <div class="main-content">
+      <div class="introduction basic-grid">
+        <div class="introduction-element-flex">
+          <div class="buttons-container">
+            <a href="mailto:colorfulprojectscloud@gmail.com">Email</a>
+            <a href="https://github.com/z-maria-cloud">Github</a>
+            <a href="/">More web projects</a>
+            <!-- website root -->
+          </div>
+        </div>
+        <!-- intro element -->
+
+        <div class="introduction-element">
+          <p>
+            When I'm not <span class="green">programming</span> I might be
+            <span class="green">drawing</span> something, and when I'm not
+            drawing I'm probably gaming or working on some other
+            <span class="green">creative project</span>.
+          </p>
+          <p>
+            I love it when
+            <span class="violet">storytelling, art and playfulness</span> meet
+            (<span class="greyed-out">I'm a big RPG nerd!</span>), and I develop
+            projects that convey this same feeling.
+          </p>
+          <p>
+            I've always been interested in computers, and started learning
+            programming when I was 11.
+          </p>
+          <p>
+            I also have intermediate skills in
+            <span class="blue">graphic design and video editing</span>.
+          </p>
+          <p>
+            I'm currently pursuing a diploma in
+            <span class="violet">humanities and economy</span>.
+          </p>
+          <p>
+            I'm interested in
+            <span class="green">sustainable and etic</span> technologies.
+            <span class="red"
+              >I will not work on projects that involve the use of AIs, NFTs or
+              crypto</span
+            >.
+          </p>
+        </div>
+        <!-- intro element -->
+      </div>
+      <!-- intro grid -->
+    </div>
+    <!-- main content -->
+
+    <% let keys = Object.keys(data.skillsets)%>
+    <% for(let i = 0; i < keys.length; i++) { %>
+
+    <h2 class="title white"><span class="gold">❁</span> <%= keys[i] %></h2>
+    <div class="main-content">
+      <div class="skills-grid basic-grid">
+        <% let topics = Object.keys(data.skillsets[keys[i]]) %>
+        <% for(let y = 0; y < topics.length; y++) { %>
+
+        <div class="skills-element shadow">
+          <div class="progress-container">
+            <p class="skill"><%= data.skillsets[keys[i]][topics[y]].name %></p>
+            <div class="custom-progress-bar">
+              <div
+                class="custom-progress-bar-content"
+                style="
+                  width: <%= data.skillsets[keys[i]][topics[y]].percentage %>%;
+                "
+              ></div>
+            </div>
+          </div>
+          <!-- progress-container -->
+          <% if (data.skillsets[keys[i]][topics[y]].fact) { %>
+          <p class="fact"><%= data.skillsets[keys[i]][topics[y]].fact %></p>
+          <% } %>
+          <% if (data.skillsets[keys[i]][topics[y]].list) { %>
+          <ul>
+            <% for(let x = 0; x < data.skillsets[keys[i]][topics[y]].list.length; x++) { %>
+            <li><%= data.skillsets[keys[i]][topics[y]].list[x]%></li>
+            <% } %>
+          </ul>
+          <% } %>
+        </div>
+        <!-- skills-element -->
+
+        <% } %>
+      </div>
+      <!-- skills grid -->
+    </div>
+    <!-- main content -->
+
+    <% } %>
+
+    <h2 class="title white"><span class="gold">❁</span>Github</h2>
+    <div class="main-content">
+      <div class="image-grid basic-grid github-grid">
+        <% keys = Object.keys(data.projects)%> <% for(let i = 0; i < keys.length; i++) { %>
+
+        <div class="image-grid-element shadow">
+          <img src="<%= keys[i] %>.jpg" />
+          <h3 class="project-title"><%= data.projects[keys[i]].name %></h3>
+          <div class="project-description-container">
+            <p class="project-description">
+              <%= data.projects[keys[i]].description %>
+            </p>
+            <a href="<%= data.projects[keys[i]].github %>" class="project-url"
+              >View on Github</a
+            >
+          </div>
+        </div>
+
+        <% } %>
+      </div>
+      <!-- main content -->
+    </div>
+
+    <div class="footer">
+      <p class="">Crafted with care 🌱️ By Leila</p>
+    </div>
+  </body>
+</html>

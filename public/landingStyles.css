@@ -1,0 +1,177 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+* {
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.pixel-font {
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.center-box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 5% 30%;
+  gap: 1rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.hosted-project {
+  border-radius: 10px;
+}
+
+.hosted-project-data {
+  padding: 1rem;
+}
+
+.hosted-project-title {
+  margin-top: 0;
+  color: #0078e1;
+  font-size: 1.7rem;
+}
+
+.hosted-project-text {
+  font-size: 1.3rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  color: #00e7ff;
+  width: 100%;
+  text-shadow: 3px 4px #106cce;
+  margin: 5rem 0 2rem;
+  font-size: 5rem;
+}
+
+.color1 {
+  color: #ffda6b;
+}
+
+.color2 {
+  color: #ec6262;
+}
+
+.negative {
+  margin: -9px;
+}
+
+.shadow {
+  -webkit-box-shadow: 1px 4px 9px 0px #d5d5d5;
+  box-shadow: 1px 4px 9px 0px #d5d5d5;
+}
+
+.decoration {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #0078e1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.decoration-element {
+  padding: 0;
+  margin: 0;
+  color: white;
+  margin: -3px;
+}
+
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  .negative {
+    margin: -7px;
+  }
+  
+  .center-box {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 5% 25%;
+	gap: 1rem;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .negative {
+    margin: -5px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 0 3rem;
+  }
+
+  .center-box {
+    margin: 5% 20%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .title-decoration {
+    display: none;
+  }
+
+  .title {
+    font-size: 5rem;
+    margin: 2rem 0;
+  }
+
+  .negative {
+    margin: -9px;
+  }
+
+  .center-box {
+    margin: 5% 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .center-box {
+    margin: 5% 10%;
+    grid-template-columns: 100%;
+  }
+
+  .title {
+    font-size: 4rem;
+    margin: 2rem 0;
+  }
+
+  .negative {
+    margin: -7px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+}

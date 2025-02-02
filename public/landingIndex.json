@@ -1,0 +1,20 @@
+{
+  "personal": {
+    "title": "About Me",
+    "description": "A page I made about my current programming skills.",
+    "address": "about",
+    "github": "https://github.com/z-maria-cloud/website-landing/"
+  },
+  "mdstudynotes": {
+    "title": "MD Study Notes",
+    "description": "An online repository of my study notes.",
+    "address": "mdstudynotes",
+    "github": "https://github.com/z-maria-cloud/md-study-notes/"
+  },
+  "useragent": {
+    "title": "What Is My User Agent?",
+    "description": "A simple page that displays the User Agent of the client that performed the request.",
+    "address": "useragent",
+    "github": "https://github.com/z-maria-cloud/what-is-my-user-agent/"
+  }
+}
