@@ -265,11 +265,9 @@ h1 {
   }
 }
 
-@media screen and (max-width: 2000px) {
-  .github-grid {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-  }
+.github-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 
 @media screen and (max-width: 1300px) {

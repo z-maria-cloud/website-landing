@@ -10,12 +10,12 @@
         "name": "English",
         "percentage": 95,
         "fact": "Fun Fact: I use english in my day-to-day life more than I use italian.",
-        "list": ["I own a B2-C1 Cambridge certification."]
+        "list": ["I have a B2-C1 Cambridge certification."]
       },
       "french": {
         "name": "French",
         "percentage": 90,
-        "fact": "Fun Fact: I grew up in a francophone country."
+        "fact": "Fun Fact: french is the second language i learnt."
       }
     },
     "Programming languages and frameworks I use": {
@@ -34,7 +34,7 @@
         "fact": "How I used Javascript so far:",
         "list": [
           "Frontend interactivity",
-          "Server programming on ExpressJs",
+          "Server programming with ExpressJs",
           "Programming simple CLI tools"
         ]
       },
@@ -47,7 +47,7 @@
         "name": "Python",
         "percentage": 55,
         "fact": "Fun Fact: Python is the first programming language I learned.",
-        "list": ["Small text-adventure games programming", "CLI tools"]
+        "list": ["Small text-adventure games", "CLI tools"]
       },
       "expressjs": {
         "name": "Express",
