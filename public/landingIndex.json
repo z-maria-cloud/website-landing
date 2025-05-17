@@ -16,5 +16,11 @@
     "description": "A simple page that displays the User Agent of the client that performed the request.",
     "address": "useragent",
     "github": "https://github.com/z-maria-cloud/what-is-my-user-agent/"
+  },
+  "art": {
+    "title": "Art",
+    "description": "A small collection of art pieces I'm proud of.",
+    "address": "art",
+    "github": "https://github.com/z-maria-cloud"
   }
 }
